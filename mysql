@@ -1,0 +1,7 @@
+# Dumping existing database
+mysqldump -u *username* -h *localhost* -p *database* > file.sql
+# Deploying from .sql file
+mysql -u *username* -h *localhost* -p
+create *database_name*;
+use *database_name*;
+source file.sql;
