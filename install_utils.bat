@@ -1,4 +1,3 @@
-winget install "RARLab.WinRAR" -e
 winget install "Dell.CommandUpdate" -e
 winget install "7zip.7zip" -e
 winget install "SlackTechnologies.Slack" -e
