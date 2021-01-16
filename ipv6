@@ -1,0 +1,14 @@
+# Disable ipv6 in grub
+
+sudo nano /etc/default/grub
+	GRUB_CMDLINE_LINUX_DEFAULT="ipv6.disable=1"
+	GRUB_CMDLINE_LINUX="ipv6.disable=1"
+sudo update-grub
+
+# Disable ipv6 in sysctl
+
+sudo nano /etc/sysctl.conf
+	net.ipv6.conf.all.disable_ipv6 = 1
+	net.ipv6.conf.default.disable_ipv6 = 1
+	net.ipv6.conf.lo.disable_ipv6 = 1
+sudo sysctl -p
