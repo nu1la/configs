@@ -1,0 +1,6 @@
+# Wifi connecting in Debian via wpa_supplicant
+
+wpa_passphrase "ESSID" "password" | sudo tee /file/destination.conf
+wpa_supplicant -c /file/destination.conf -i interface &
+iwconfig
+
